@@ -23,7 +23,6 @@ const ProductCard: React.FC<ProductCardProps> = ({ data }) => {
   };
 
   const onPreview: MouseEventHandler<HTMLButtonElement> = (event) => {
-    //  if the button is nested inside other clickable elements (like divs with click handlers), those parent handlers will not be executed when the button is clicked.
     event.stopPropagation();
 
     previewModal.onOpen(data);
